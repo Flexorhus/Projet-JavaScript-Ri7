@@ -1,26 +1,5 @@
 const prompt = require('prompt-sync')()
 
-// const guerrierDuFeu = {
-//     name: "Guerrier du Feu",
-//     pv: 100,
-//     attaques: [
-//         { nom: "Frappe Rapide", puissance: 10, chanceToucher: 0.50 },
-//         { nom: "Soin Léger", soin: -15, chanceToucher: 0.33 },
-//         { nom: "Coup Puissant", puissance: 20, chanceToucher: 0.33 },
-//         { nom: "Frappe Dévastatrice", puissance: 30, chanceToucher: 0.25 },
-//     ]
-// };
-
-// const sombreLutin = {
-//     name: "Sombre Lutin",
-//     pv: 100,
-//     attaques: [
-//         { nom: "Frappe Rapide", puissance: 10, chanceToucher: 0.50 },
-//         { nom: "Soin Léger", soin: -15, chanceToucher: 0.33 },
-//         { nom: "Coup Puissant", puissance: 20, chanceToucher: 0.33 },
-//         { nom: "Frappe Dévastatrice", puissance: 30, chanceToucher: 0.25 },
-//     ]
-// };
 
 
 const guerrierDuFeu = {
@@ -64,29 +43,7 @@ while (guerrierDuFeu.pv > 0 && sombreLutin.pv > 0) {
     }
     const attaqueGuerrier = guerrierDuFeu.attaques[choix - 1];
 
-// 
-    // function infligeDegat (lanceur, adversaire){
-    //     while (sombreLutin.pv >= 0 && guerrierDuFeu.pv >= 0) {
-    //         console.log("PV du Guerrier du Feu : " + guerrierDuFeu.pv + " PV");
-    //         console.log("PV du Sombre Lutin : " + sombreLutin.pv + " PV");
 
-    //     }
-            // if (hasard < attaque.name.chanceToucher) {
-            //     if (attaque.name.puissance > 0) {
-            //         guerrierDuFeu.pv = guerrierDuFeu.pv - attaqueLutin.puissance;
-            //         console.log(attaqueLutin.nom + " inflige " + attaqueLutin.puissance + " PV de dégâts à " + guerrierDuFeu.name + "!");
-            //     } else {
-            //         sombreLutin.pv = sombreLutin.pv + -attaqueLutin.puissance;
-            //         console.log(attaqueLutin.nom + " soigne " + attaqueGuerrier.puissance + " PV à lui même !");
-            //     }
-            // } else {
-            //     console.log(attaque.name.nom + " rate sa cible!");
-            // }
-            
-    
-
-    // }
-        
     const hasard = Math.random();
     if (hasard < attaqueGuerrier.chanceToucher) {
         if (attaqueGuerrier.puissance > 0) {
